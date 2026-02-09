@@ -1,34 +1,31 @@
-import { Button } from "@components";
-import { useColors } from "@config/colors";
+import { Typography, AnimatedBubbles, AnimatedLogo } from "@components/ui";
 import styles from "@styles";
-import { Text, View } from "react-native";
+import { ImageBackground } from "expo-image";
+import { View } from "react-native";
 
 export default function Index() {
-  const colors = useColors().colors;
   return (
-    <View
-      style={[
-        styles.p(16),
-        styles.flex_1,
-        styles.items_center,
-        styles.justify_center,
-        styles.gap_md,
-        styles.bg(colors.bg_200),
-      ]}
+    <ImageBackground
+      style={[styles.flex_1, styles.justify_center]}
+      source={require("../../assets/images/bg_main.webp")}
     >
-      <View>
-        <Text style={[styles.center, styles.text_2xl, styles.font("bold"), styles.color(colors.bg_content)]}>
-          Welcome to AppLand!
-        </Text>
+      <AnimatedBubbles />
+      <View style={[styles.flex_1, styles.items_center, styles.justify_center, styles.gap_md, ,]}>
+        <AnimatedLogo
+          source={require("../../assets/images/logo_main.webp")}
+          style={[styles.w("100%"), styles.h("28%")]}
+          contentFit="cover"
+        />
 
-        <Text style={[styles.center, styles.text_base, styles.font("regular"), styles.color(colors.bg_content)]}>
-          Edit app/index.tsx to edit this screen.
-        </Text>
+        <Typography color="white" size="text_4xl" variant="bold">
+          Find Your Next Adventure
+        </Typography>
+
+        <View style={[styles.px(12), styles.absolute, styles.bottom_5, styles.w("100%"), styles.items_center]}>
+          <Typography color="white">@{new Date().getFullYear()} Codesordinate Studios.</Typography>
+          <Typography color="white">All rights reserved.</Typography>
+        </View>
       </View>
-
-      <Button title="Click me" onPress={() => alert(4)} />
-
-      <View style={[styles.divider]} />
-    </View>
+    </ImageBackground>
   );
 }

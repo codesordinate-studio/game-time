@@ -1,9 +1,10 @@
 import { useColorScheme } from "react-native";
 
-const colors = {
+export const colors = {
   primary: "#82791b",
   bg_action: "#c6891f", //Action Background
   bg_action_content: "#ffffff", //Action Text Content
+  white: "#FFFFFF",
 
   light: {
     bg_100: "#FFFFFF", //Surface

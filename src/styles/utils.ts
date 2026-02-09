@@ -239,7 +239,7 @@ export const staticStyles = StyleSheet.create({
   text_2xl: { fontSize: fontNormalize(24) },
   text_3xl: { fontSize: fontNormalize(30) },
   text_4xl: { fontSize: fontNormalize(36) },
-  text_5xl: { fontSize: fontNormalize(48) },
+  text_5xl: { fontSize: fontNormalize(42) },
   text_6xl: { fontSize: fontNormalize(60) },
   text_7xl: { fontSize: fontNormalize(72) },
 
