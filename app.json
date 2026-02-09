@@ -1,16 +1,16 @@
 {
   "expo": {
-    "name": "acme",
-    "slug": "acme",
+    "name": "Game Time",
+    "slug": "gameTime",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icons/icon.png",
-    "scheme": "acme",
+    "scheme": "gameTime",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.codesordinatestudio.acme"
+      "bundleIdentifier": "com.codesordinatestudio.gametime"
     },
     "android": {
       "adaptiveIcon": {
