@@ -11,7 +11,7 @@ export default function RootLayout() {
   const [fontLoaded] = useFonts(fonts.family);
 
   useEffect(() => {
-    //player.play();
+    player.play();
   }, [player]);
 
   if (!fontLoaded) return null;
