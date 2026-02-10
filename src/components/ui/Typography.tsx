@@ -20,11 +20,11 @@ export const Typography = ({
     <Text
       {...props}
       style={[
-        styles.center,
         styles.color(colors[color as keyof typeof colors]),
         styles.font(variant),
         { fontSize: fonts.sizes[size] },
         styles.shadow_sm,
+        props.style,
       ]}
     />
   );

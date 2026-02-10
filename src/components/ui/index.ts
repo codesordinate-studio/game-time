@@ -1,4 +1,5 @@
-export * from "./Typography";
-export * from "./AnimatedBubbles";
+export * from "./Page";
 export * from "./Button";
+export * from "./Typography";
 export * from "./AnimatedLogo";
+export * from "./AnimatedBubbles";

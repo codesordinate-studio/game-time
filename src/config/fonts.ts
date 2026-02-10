@@ -1,14 +1,19 @@
-import { Outfit_400Regular, Outfit_500Medium } from "@expo-google-fonts/outfit";
-import { DynaPuff_700Bold, DynaPuff_600SemiBold } from "@expo-google-fonts/dynapuff";
+import { Outfit_400Regular } from "@expo-google-fonts/outfit";
+import {
+  DynaPuff_700Bold,
+  DynaPuff_600SemiBold,
+  DynaPuff_500Medium,
+} from "@expo-google-fonts/dynapuff";
 import { Dimensions, PixelRatio } from "react-native";
 
-const fontNormalize = (size: number) => PixelRatio.roundToNearestPixel((size * Dimensions.get("window").width) / 375);
+const fontNormalize = (size: number) =>
+  PixelRatio.roundToNearestPixel((size * Dimensions.get("window").width) / 375);
 
 export const fonts = {
   family: {
     bold: DynaPuff_700Bold,
     semibold: DynaPuff_600SemiBold,
-    medium: Outfit_500Medium,
+    medium: DynaPuff_500Medium,
     regular: Outfit_400Regular,
   },
 

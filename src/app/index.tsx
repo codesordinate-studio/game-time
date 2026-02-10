@@ -1,9 +1,17 @@
 import { Typography, AnimatedBubbles, AnimatedLogo } from "@components/ui";
 import styles from "@styles";
 import { ImageBackground } from "expo-image";
+import { useRouter } from "expo-router";
+import { useEffect } from "react";
 import { View } from "react-native";
 
 export default function Index() {
+  const navigate = useRouter();
+
+  useEffect(() => {
+    setTimeout(() => navigate.replace("/home"), 2000);
+  }, [navigate]);
+
   return (
     <ImageBackground
       style={[styles.flex_1, styles.justify_center]}
@@ -17,7 +25,7 @@ export default function Index() {
           contentFit="cover"
         />
 
-        <Typography color="white" size="text_4xl" variant="bold">
+        <Typography color="white" size="text_4xl" variant="bold" style={[styles.center]}>
           Find Your Next Adventure
         </Typography>
 
