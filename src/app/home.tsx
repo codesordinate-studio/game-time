@@ -25,7 +25,7 @@ export default function Index() {
             styles.font("bold"),
             styles.text_4xl,
             styles.shadow_sm,
-            styles.p(16),
+            styles.p(30),
           ]}
         >
           Choose and Exciting Game
@@ -43,7 +43,13 @@ export default function Index() {
               <Pressable
                 onPress={() => goToGame(el)}
                 key={el.name}
-                style={[styles.p(20), styles.w(scaler.width(90)), styles.flex_1, styles.gap_md, styles.overflow_hidden]}
+                style={[
+                  styles.pl(30),
+                  styles.w(scaler.width(90)),
+                  styles.flex_1,
+                  styles.gap_md,
+                  styles.overflow_hidden,
+                ]}
               >
                 <ImageBackground
                   source={el.config.logo}
@@ -52,7 +58,7 @@ export default function Index() {
                     styles.overflow_hidden,
                     styles.h(scaler.height(40)),
                     styles.bg("#fff3"),
-                    styles.rounded_md,
+                    styles.rounded_sm,
                   ]}
                   contentFit="cover"
                 />
@@ -68,7 +74,7 @@ export default function Index() {
             ))}
           </ScrollView>
 
-          <View style={[styles.p(20), styles.justify_center]}>
+          <View style={[styles.p(30), styles.justify_center]}>
             <Button title="More Games" onPress={() => console.log("More Games")} />
           </View>
         </View>

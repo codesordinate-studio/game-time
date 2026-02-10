@@ -1,6 +1,6 @@
 import { useColors } from "@config/colors";
 import styles from "@styles";
-import { Pressable, PressableProps, Text } from "react-native";
+import { Pressable, PressableProps } from "react-native";
 import { Typography } from "./Typography";
 import { ImageBackground } from "expo-image";
 

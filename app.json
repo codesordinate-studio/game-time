@@ -5,7 +5,7 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icons/icon.png",
-    "scheme": "gameTime",
+    "scheme": "game-time",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
@@ -54,6 +54,18 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "be8a35f8-3722-4b95-ac94-6b8875139a62"
+      }
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/be8a35f8-3722-4b95-ac94-6b8875139a62"
     }
   }
 }
