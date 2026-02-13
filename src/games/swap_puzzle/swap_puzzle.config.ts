@@ -1,7 +1,7 @@
 export const SwapPuzzleConfig = {
   title: "Swap Puzzle",
   description: "Rearrange to solve the puzzle.",
-  logo: require("../../../assets/games/swap_puzzle/swap_logo.webp"),
+
   splits: [9, 16, 25, 36, 49],
 
   colors: {

@@ -8,6 +8,7 @@ export const staticStyles = StyleSheet.create({
   flex_1: { flex: 1 },
   flex_2: { flex: 2 },
   flex_3: { flex: 3 },
+  aspect_square: { aspectRatio: 1 },
   row: { flexDirection: "row" },
   column: { flexDirection: "column" },
   wrap: { flexWrap: "wrap" },

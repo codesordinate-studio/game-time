@@ -31,6 +31,7 @@ export const dynamicStyles = {
   w: (val: number | string) => getStyle(`w-${val}`, { width: val }),
   h: (val: number | string) => getStyle(`h-${val}`, { height: val }),
   size: (val: number) => getStyle(`size-${val}`, { width: val, height: val }),
+  aspect_ratio: (val: number) => getStyle(`aspect-${val}`, { aspectRatio: val }),
 
   // Colors
   bg: (val: string) => getStyle(`bg-${val}`, { backgroundColor: val }),

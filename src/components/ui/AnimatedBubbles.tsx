@@ -20,7 +20,7 @@ interface Bubble {
 }
 
 // Create scattered bubbles to match the background image
-const BUBBLES: Bubble[] = Array.from({ length: 10 }).map((_, i) => ({
+const BUBBLES: Bubble[] = Array.from({ length: 30 }).map((_, i) => ({
   id: i,
   size: Math.random() * 50 + 40, // 20-100px
   top: Math.random() * 100, // 0-100%

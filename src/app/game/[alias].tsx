@@ -29,7 +29,7 @@ export default function GameAlias() {
 
       <View style={[styles.flex_1, styles.justify_center, styles.items_center, styles.p(20), styles.gap_lg]}>
         <ImageBackground
-          source={game?.config.logo}
+          source={game?.logo}
           style={[styles.w_full, styles.overflow_hidden, styles.h(scaler.height(20)), styles.rounded_md]}
           contentFit="contain"
         />
